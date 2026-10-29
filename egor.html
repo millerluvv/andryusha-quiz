@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b19">
+<meta name="description" content="Егор, он же Колес: 10 вопросов про Fortnite, Андрюшу, Миллера и верность отряду.">
+<title>Егор, на связи? 🎮</title>
+<style>
+:root{color-scheme:dark;--bg:#090b19;--ink:#f3f4ff;--muted:#979cb7;--line:#292c48;--purple:#a48aff;--blue:#67daff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100svh;overflow-x:hidden;background-image:radial-gradient(ellipse at 8% 15%,#56349c35,transparent 48%),radial-gradient(ellipse at 95% 75%,#146ca832,transparent 45%)}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.14;background-image:linear-gradient(#8d8ba51c 1px,transparent 1px),linear-gradient(90deg,#8d8ba51c 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(#000,transparent)}
+button,textarea{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}button:focus-visible{outline:3px solid var(--blue);outline-offset:5px}button:disabled{opacity:.4;cursor:default}[hidden]{display:none!important}
+.shell{width:min(1100px,100%);margin:auto;padding:28px 36px max(24px,env(safe-area-inset-bottom));position:relative}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);padding-bottom:24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:2px;font-size:12px}.logo{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#9d7dff22;color:var(--purple);font-size:20px}.live{font-size:11px;letter-spacing:1.4px;color:#b5bfd6;display:flex;align-items:center;gap:8px}.dot{width:6px;height:6px;border-radius:50%;background:#7ef8bd;box-shadow:0 0 12px #7ef8bd}
+main{display:grid;grid-template-columns: .9fr 1.1fr;gap:64px;align-items:center;min-height:calc(100svh - 165px);padding:48px 0}
+.eyebrow{font-size:10px;letter-spacing:2.8px;color:var(--blue);font-weight:700}.intro h1{font-size:clamp(40px,5vw,61px);line-height:1.06;letter-spacing:-2.5px;margin:20px 0}.intro h1 span{color:var(--purple)}.lead{font-size:15px;line-height:1.7;color:var(--muted);max-width:330px}
+.art{height:175px;position:relative;max-width:340px;margin:28px 0 12px}.art:before{content:"";position:absolute;inset:30px 30px;background:#895cff40;filter:blur(50px);border-radius:50%}.art svg{width:100%;height:100%;position:relative;filter:drop-shadow(0 16px 22px #0008);animation:float 5s ease-in-out infinite}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{color:#a9aec8;border:1px solid var(--line);border-radius:6px;padding:7px 9px;font-size:10px;letter-spacing:1px}
+.card{border:1px solid #3b365b;border-radius:22px;background:linear-gradient(145deg,#1b1c33e8,#101322f5);padding:30px;box-shadow:0 24px 80px #0004;min-width:0;position:relative}.card:before{content:"";position:absolute;top:-1px;left:26px;right:26px;height:1px;background:linear-gradient(90deg,transparent,#b09aff,transparent)}
+.cardtop{display:flex;justify-content:space-between;align-items:center;font-size:11px;color:var(--muted);letter-spacing:1px}.count{color:#d6ceff;font-variant-numeric:tabular-nums}.track{height:4px;border-radius:5px;background:#2b2d47;margin:14px 0 28px;overflow:hidden}.fill{height:100%;width:10%;background:linear-gradient(90deg,#9b7bff,#6bd9ff);transition:width .3s}
+.question-icon{display:grid;place-items:center;width:45px;height:45px;border-radius:13px;background:#9d7dff16;border:1px solid #9d7dff30;font-size:24px}
+h2{font-size:25px;line-height:1.25;letter-spacing:-.6px;margin:18px 0 9px}.hint{font-size:12px;color:var(--muted);line-height:1.5;margin:0 0 24px}.answers{display:grid;gap:10px}.option{display:flex;align-items:center;gap:13px;text-align:left;color:#d5d8eb;background:#15182b;border:1px solid #30334f;border-radius:11px;padding:15px;font-size:14px;min-height:54px;transition:background .2s,border-color .2s,transform .2s}.key{width:24px;height:24px;display:grid;place-items:center;border:1px solid #41435f;border-radius:6px;font-size:10px;color:#9a9fb9;flex-shrink:0}.option:hover{border-color:#8773ce;transform:translateX(2px)}.option[aria-pressed=true]{border-color:#aa90ff;background:#a285ff1c;color:#fff}.option[aria-pressed=true] .key{background:#a58bff;border-color:#a58bff;color:#101222}.check{margin-left:auto;color:var(--purple)}.nav{display:flex;align-items:center;gap:14px;margin-top:26px}.back,.quiet{background:transparent;border:0;color:var(--muted);font-size:12px;padding:12px 0}.back{min-width:65px;text-align:left}.primary{border:1px solid #b5a0ff;background:linear-gradient(110deg,#a88bff,#8474ef);color:#0d1021;font-weight:800;padding:16px 21px;border-radius:10px;font-size:13px;flex:1;box-shadow:0 6px 25px #8770ff20}.primary:hover{filter:brightness(1.1)}.under{font-size:10px;line-height:1.6;color:#747c9c;text-align:center;margin:17px 0 0}
+footer{display:flex;justify-content:space-between;gap:15px;color:#656e8e;font-size:10px;letter-spacing:1px}.fade{animation:enter .25s ease-out}.result{max-width:680px;margin:42px auto}.badge{font-size:44px;margin-bottom:20px}.result h1{font-size:clamp(26px,5vw,39px);line-height:1.15;letter-spacing:-1px}.result h1 span{color:var(--purple)}.summary{margin:25px 0;display:grid;gap:0}.row{padding:15px 0;border-bottom:1px solid var(--line)}.row dt{font-size:12px;color:var(--muted);line-height:1.5}.row dd{font-size:15px;margin:6px 0 0;color:#e3ddff}.actions{display:flex;gap:10px;flex-wrap:wrap}.secondary{padding:15px;border-radius:10px;background:#181c31;color:var(--ink);border:1px solid #454461;font-size:13px}.notice{color:var(--muted);font-size:12px;line-height:1.6}.status{color:var(--blue);font-size:13px;min-height:22px;margin-top:15px}.manual{width:100%;height:180px;background:#090d1a;border:1px solid var(--line);border-radius:10px;color:var(--ink);padding:12px}
+@keyframes float{50%{transform:translateY(-9px) rotate(-2deg)}}@keyframes enter{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){.shell{padding:20px 20px max(25px,env(safe-area-inset-bottom))}header{padding-bottom:18px}.live{font-size:9px;letter-spacing:.5px}.brand{font-size:10px;letter-spacing:1.3px}main{display:block;padding:30px 0;min-height:auto}.intro{padding-bottom:25px}.intro h1{font-size:39px;line-height:1.05;margin:12px 0;letter-spacing:-1.8px}.intro h1 br{display:none}.intro .lead{font-size:13px;max-width:none;margin:0}.art{display:none}.chips{margin-top:17px}.chip{font-size:9px;padding:6px 8px}.card{padding:23px 20px;border-radius:18px}h2{font-size:23px}.track{margin-bottom:22px}.hint{margin-bottom:20px}.option{padding:13px;font-size:14px}.nav{margin-top:22px}.result{margin:28px auto}.result h1{font-size:28px}footer{font-size:8px;letter-spacing:.6px}.actions>*{width:100%}.eyebrow{font-size:9px}.question-icon{width:38px;height:38px;font-size:21px}}
+@media(prefers-reduced-motion:reduce){*,*:before{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header><div class="brand"><span class="logo" aria-hidden="true">✣</span> NIGHT SQUAD</div><div class="live"><span class="dot"></span> ЛОББИ ОТКРЫТО</div></header>
+<main id="quiz">
+<section class="intro"><div class="eyebrow">ЛИЧНОЕ ДЕЛО: КОЛЕС</div><h1>Егор,<br><span>на связи?</span> 🎮</h1><p class="lead">Колес, твой выход! Андрюша и Миллер ждут. Проверим, кто тебе дороже: пацаны или синий сундук.</p>
+<div class="art" aria-hidden="true"><svg viewBox="0 0 340 180" fill="none"><defs><linearGradient id="pad" x1="70" y1="30" x2="290" y2="165" gradientUnits="userSpaceOnUse"><stop stop-color="#4b426d"/><stop offset=".45" stop-color="#252d4a"/><stop offset="1" stop-color="#171d34"/></linearGradient><linearGradient id="edge"><stop stop-color="#b296ff"/><stop offset="1" stop-color="#68dfff"/></linearGradient></defs><ellipse cx="170" cy="157" rx="107" ry="9" fill="#a18bff" opacity=".08"/><g transform="rotate(-12 170 90)"><path d="M94 44C72 45 61 73 53 111C43 153 64 164 86 144L118 117H222L254 144C276 164 297 153 287 111C279 73 268 45 246 44L217 48H123L94 44Z" fill="url(#pad)" stroke="url(#edge)" stroke-width="2"/><path d="M124 48L133 85H207L217 48" fill="#11162b" stroke="#706192"/><path d="M157 40H183" stroke="#8a7ac6" stroke-width="3" stroke-linecap="round"/><path d="M91 66V96M76 81H106" stroke="#0a1024" stroke-width="11" stroke-linecap="round"/><path d="M91 66V96M76 81H106" stroke="#8a8ba5" stroke-width="5" stroke-linecap="round"/><circle cx="130" cy="105" r="16" fill="#0c1226" stroke="#535a78" stroke-width="3"/><circle cx="210" cy="105" r="16" fill="#0c1226" stroke="#535a78" stroke-width="3"/><circle cx="130" cy="105" r="10" stroke="#292f49"/><circle cx="210" cy="105" r="10" stroke="#292f49"/><circle cx="244" cy="67" r="6" stroke="#b59aff" stroke-width="2"/><circle cx="260" cy="83" r="6" stroke="#65d5ff" stroke-width="2"/><path d="M240 94L248 102M248 94L240 102M223 83L229 77L235 83L229 89Z" stroke="#a49cff" stroke-width="2"/><path d="M166 99H174" stroke="#6cd4ff" stroke-width="2" stroke-linecap="round"/></g><path d="M25 39L32 32M25 32L32 39M310 131L317 124M310 124L317 131" stroke="#7d6bb5" stroke-width="2"/><circle cx="290" cy="26" r="4" stroke="#61bedb"/><circle cx="41" cy="145" r="3" fill="#a491ff"/></svg></div>
+<div class="chips"><span class="chip">10 ВОПРОСОВ</span><span class="chip">~ 1 МИНУТА</span><span class="chip">100% FORTNITE</span></div></section>
+<section class="card" aria-label="Игровой опрос"><div class="cardtop"><span>БОЕВАЯ АНКЕТА</span><span class="count" id="count">1/10</span></div><div class="track" role="progressbar" aria-label="Прогресс опроса" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1" id="progress"><div class="fill" id="fill"></div></div><div id="stage"><div class="question-icon" id="icon" aria-hidden="true"></div><h2 id="question" tabindex="-1"></h2><p class="hint" id="hint"></p><div class="answers" id="answers" role="group" aria-labelledby="question"></div></div><div class="nav"><button class="back" id="back">← Назад</button><button class="primary" id="next" disabled>Дальше →</button></div><p class="under">Без правильных ответов. Но отряд всё запомнит 👀</p></section>
+</main>
+<section id="result" class="card result" hidden aria-labelledby="result-title"><div class="eyebrow">МИССИЯ: СОБРАТЬСЯ НА КАТКУ</div><div class="badge" aria-hidden="true">🔥</div><h1 id="result-title" tabindex="-1">🔥 ЕГОР, ТВОЯ ЗАЯВКА В <span>НОЧНОЙ ОТРЯД</span> ПРИНЯТА!</h1><p class="notice">Анкета готова, боец. Осталось отправить её братану — пусть готовит лобби.</p><dl class="summary" id="summary"></dl><div class="actions"><button class="primary" id="share">📲 Отправить ответы</button><button class="secondary" id="copy">Скопировать ответы</button></div><p class="notice">Ответы не отправляются автоматически. Нажми «Отправить ответы» и выбери получателя в меню телефона.</p><p class="status" role="status" id="status"></p><textarea id="manual" class="manual" readonly aria-label="Ответы для ручного копирования" hidden></textarea><button class="quiet" id="edit">← Изменить ответы</button></section>
+<footer><span>СПЕЦИАЛЬНО ДЛЯ КОЛЕСА</span><span>ЕЩЁ ОДНА КАТКА — И СПАТЬ ✦</span></footer>
+</div>
+<script>
+"use strict";
+const questions=[
+  [
+    "Егор, будешь сегодня играть в Fortnite после 23:45?",
+    [
+      "Да, Колес на месте 🔥",
+      "Как пойдёт, напишу Андрюше и Миллеру",
+      "Нет, сегодня лутайте без меня 😴"
+    ],
+    "🌙",
+    "Андрюша и Миллер проверяют, будет ли третий в лобби."
+  ],
+  [
+    "В пятницу будешь играть в Fortnite с Андрюшей и Миллером?",
+    [
+      "Да, собирайте отряд 🎮",
+      "По возможности, заранее предупрежу",
+      "Нет, в пятницу Колес на выходном"
+    ],
+    "📅",
+    "Пятничный десант без Колеса — уже не тот состав."
+  ],
+  [
+    "Перед тобой синий сундук и нокнутый Андрюша. Что сделаешь первым?",
+    [
+      "Конечно подниму Андрюшу.",
+      "Открою синий сундук и после подниму бедолагу.",
+      "Откину Андрюшу подальше от синего сундука и открою синий сундук."
+    ],
+    "💎",
+    "Теперь ты по другую сторону сундука. Андрюша всё запомнит 👀"
+  ],
+  [
+    "Андрюша и Миллер нокнуты, а поднять пока можно только одного. Кого спасёшь первым?",
+    [
+      "Андрюшу — он ближе, потом сразу Миллера",
+      "Миллера — пусть поможет поднять Андрюшу",
+      "Кто громче орёт в микрофон, того и подниму 😂"
+    ],
+    "🤝",
+    "Колес, сегодня судьба отряда в твоих руках."
+  ],
+  [
+    "Миллер поставил метку, Андрюша прыгает в другую сторону. Куда летишь?",
+    [
+      "К Миллеру: метка — это договор",
+      "За Андрюшей: одному ему нельзя 😂",
+      "В третье место: у Колеса свой маршрут"
+    ],
+    "🪂",
+    "Три человека. Три точки высадки. Одна дружба под вопросом."
+  ],
+  [
+    "Андрюша кричит: «Там один, пушим!» Миллер говорит, что там целый отряд. Кому веришь?",
+    [
+      "Миллеру — сначала проверим и зайдём вместе",
+      "Андрюше — Колес уже летит в бой",
+      "Никому. У меня тут сундук не открыт"
+    ],
+    "👀",
+    "Разведка закончена. Осталось найти разведчика."
+  ],
+  [
+    "У тебя полный щит, а у Миллера ноль. Рядом лежит большая банка. Что делаешь?",
+    [
+      "Отдам Миллеру, пусть тоже поживёт",
+      "Заберу про запас: Колесу нужнее 😎",
+      "Позову Андрюшу делить банку, пока Миллер смотрит"
+    ],
+    "🧪",
+    "Миллер просил щит, а получил проверку дружбы."
+  ],
+  [
+    "Миллер выбил врага, а Андрюша уже бежит к золотому оружию. Твои действия?",
+    [
+      "Оставлю оружие Миллеру — он заслужил",
+      "Обрежу Андрюшу и заберу первым 😂",
+      "Пока они спорят, тихо залутаю всё остальное"
+    ],
+    "✨",
+    "Золотой лут превращает любой отряд в соревнование по бегу."
+  ],
+  [
+    "Буря идёт, Андрюша уже в машине, Миллер зовёт в зону, а ты слышишь сундук. Что выберешь?",
+    [
+      "К пацанам в машину — сундуков ещё найдём",
+      "«Десять секунд!» Открою сундук и побегу",
+      "Отправлю Андрюшу за сундуком, а сам сяду к Миллеру"
+    ],
+    "🌪️",
+    "Колес, это синий сундук или очередная причина опоздать?"
+  ],
+  [
+    "Андрюша сказал «последняя катка», Миллер уже нажал «Готов». Что делаешь ты?",
+    [
+      "Тоже жму «Готов». Спать будем после победы 🏆",
+      "Уговариваю Андрюшу: «Братан, ну одну!»",
+      "Ухожу спать, но остаюсь слушать их в голосовом"
+    ],
+    "🔁",
+    "Настоящий финальный босс Fortnite — кнопка «Готов»."
+  ]
+];
+const $=id=>document.getElementById(id),storageKey="egor-koles-fortnite-v1";
+let selected=Array(10).fill(null),step=0,complete=false;
+try{const saved=JSON.parse(localStorage.getItem(storageKey));if(saved&&Array.isArray(saved.selected)&&saved.selected.length===10){selected=saved.selected.map((v,i)=>Number.isInteger(v)&&v>=0&&v<questions[i][1].length?v:null);step=Number.isInteger(saved.step)?Math.max(0,Math.min(9,saved.step)):0;complete=saved.complete===true&&selected.every(v=>v!==null)}}catch{}
+function save(){try{localStorage.setItem(storageKey,JSON.stringify({selected,step,complete}))}catch{}}
+function render(focus=false){$("quiz").hidden=false;$("result").hidden=true;const q=questions[step];$("count").textContent=(step+1)+"/10";$("progress").setAttribute("aria-valuenow",step+1);$("fill").style.width=((step+1)*10)+"%";$("question").textContent=q[0];$("icon").textContent=q[2];$("hint").textContent=q[3];$("answers").replaceChildren();q[1].forEach((answer,i)=>{const b=document.createElement("button");b.className="option";b.type="button";b.setAttribute("aria-pressed",String(selected[step]===i));const key=document.createElement("span");key.className="key";key.textContent=String.fromCharCode(65+i);const label=document.createElement("span");label.textContent=answer;const check=document.createElement("span");check.className="check";check.setAttribute("aria-hidden","true");check.textContent=selected[step]===i?"✓":"";b.append(key,label,check);b.onclick=()=>{selected[step]=i;save();updateChoice(i)};$("answers").append(b)});$("back").disabled=step===0;$("next").disabled=selected[step]===null;$("next").textContent=step===9?"В отряд! 🔥":"Дальше →";$("stage").classList.remove("fade");void $("stage").offsetWidth;$("stage").classList.add("fade");if(focus)$("question").focus({preventScroll:true})}
+function updateChoice(i){Array.from($("answers").children).forEach((b,j)=>{b.setAttribute("aria-pressed",String(i===j));b.querySelector(".check").textContent=i===j?"✓":""});$("next").disabled=false}
+function result(focus=false){$("quiz").hidden=true;$("result").hidden=false;$("summary").replaceChildren();questions.forEach((q,i)=>{const row=document.createElement("div");row.className="row";const dt=document.createElement("dt");dt.textContent=(i+1)+". "+q[0];const dd=document.createElement("dd");dd.textContent=q[1][selected[i]];row.append(dt,dd);$("summary").append(row)});if(focus){window.scrollTo({top:0,behavior:"auto"});$("result-title").focus({preventScroll:true})}}
+function textResults(){return "🎮 Егор, на связи?\n🔥 Заявка в ночной отряд принята!\n\n"+questions.map((q,i)=>(i+1)+". "+q[0]+"\n→ "+q[1][selected[i]]).join("\n\n")}
+$("next").onclick=()=>{if(selected[step]===null)return;if(step<9){step++;save();render(true)}else{complete=true;save();result(true)}};
+$("back").onclick=()=>{if(step>0){step--;save();render(true)}};
+$("edit").onclick=()=>{complete=false;step=0;save();render(true);window.scrollTo({top:0,behavior:"auto"})};
+async function copy(){try{if(!navigator.clipboard)throw Error();await navigator.clipboard.writeText(textResults());$("status").textContent="Скопировано! Вставь ответы в чат братану 🤝"}catch{$("manual").hidden=false;$("manual").value=textResults();$("manual").focus();$("manual").select();$("status").textContent="Выдели текст и выбери «Скопировать»."}}
+$("copy").onclick=copy;
+$("share").onclick=async()=>{if(navigator.share){try{await navigator.share({title:"Егор (Колес): заявка в ночной отряд 🎮",text:textResults()});$("status").textContent="Меню отправки закрыто. Получение ответов сайтом не проверяется."}catch(e){$("status").textContent=e.name==="AbortError"?"Отправка отменена. Ответы на месте.":"Не удалось открыть отправку. Нажми «Скопировать ответы»."}}else{await copy();$("status").textContent="Меню отправки здесь недоступно. Скопируй ответы и вставь их в Telegram."}};
+if(complete)result();else render();
+</script>
+</body>
+</html>
