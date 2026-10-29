@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#090b19">
-<meta name="description" content="Андрюша, собираем ночной отряд! 10 вопросов, один игровой вечер и никаких внезапных исчезновений.">
+<meta name="description" content="Андрюша, собираем отряд в Fortnite! 10 вопросов про катки, лут и спасение Колеса.">
 <title>Андрюша, на связи? 🎮</title>
 <style>
 :root{color-scheme:dark;--bg:#090b19;--ink:#f3f4ff;--muted:#979cb7;--line:#292c48;--purple:#a48aff;--blue:#67daff}
@@ -31,9 +31,9 @@ footer{display:flex;justify-content:space-between;gap:15px;color:#656e8e;font-si
 <div class="shell">
 <header><div class="brand"><span class="logo" aria-hidden="true">✣</span> NIGHT SQUAD</div><div class="live"><span class="dot"></span> ЛОББИ ОТКРЫТО</div></header>
 <main id="quiz">
-<section class="intro"><div class="eyebrow">ПРИГЛАШЕНИЕ В НОЧНОЙ ОТРЯД</div><h1>Андрюша,<br><span>на связи?</span> 🎮</h1><p class="lead">Отряд ждёт. Заполни боевую анкету — и определимся, кто сегодня тащит, а кто «ещё одну и спать».</p>
+<section class="intro"><div class="eyebrow">ПРИГЛАШЕНИЕ В НОЧНОЙ ОТРЯД</div><h1>Андрюша,<br><span>на связи?</span> 🎮</h1><p class="lead">Fortnite ждёт. Разберёмся, когда ты залетаешь и что для тебя важнее: спасти Колеса или открыть синий сундук.</p>
 <div class="art" aria-hidden="true"><svg viewBox="0 0 340 180" fill="none"><defs><linearGradient id="pad" x1="70" y1="30" x2="290" y2="165" gradientUnits="userSpaceOnUse"><stop stop-color="#4b426d"/><stop offset=".45" stop-color="#252d4a"/><stop offset="1" stop-color="#171d34"/></linearGradient><linearGradient id="edge"><stop stop-color="#b296ff"/><stop offset="1" stop-color="#68dfff"/></linearGradient></defs><ellipse cx="170" cy="157" rx="107" ry="9" fill="#a18bff" opacity=".08"/><g transform="rotate(-12 170 90)"><path d="M94 44C72 45 61 73 53 111C43 153 64 164 86 144L118 117H222L254 144C276 164 297 153 287 111C279 73 268 45 246 44L217 48H123L94 44Z" fill="url(#pad)" stroke="url(#edge)" stroke-width="2"/><path d="M124 48L133 85H207L217 48" fill="#11162b" stroke="#706192"/><path d="M157 40H183" stroke="#8a7ac6" stroke-width="3" stroke-linecap="round"/><path d="M91 66V96M76 81H106" stroke="#0a1024" stroke-width="11" stroke-linecap="round"/><path d="M91 66V96M76 81H106" stroke="#8a8ba5" stroke-width="5" stroke-linecap="round"/><circle cx="130" cy="105" r="16" fill="#0c1226" stroke="#535a78" stroke-width="3"/><circle cx="210" cy="105" r="16" fill="#0c1226" stroke="#535a78" stroke-width="3"/><circle cx="130" cy="105" r="10" stroke="#292f49"/><circle cx="210" cy="105" r="10" stroke="#292f49"/><circle cx="244" cy="67" r="6" stroke="#b59aff" stroke-width="2"/><circle cx="260" cy="83" r="6" stroke="#65d5ff" stroke-width="2"/><path d="M240 94L248 102M248 94L240 102M223 83L229 77L235 83L229 89Z" stroke="#a49cff" stroke-width="2"/><path d="M166 99H174" stroke="#6cd4ff" stroke-width="2" stroke-linecap="round"/></g><path d="M25 39L32 32M25 32L32 39M310 131L317 124M310 124L317 131" stroke="#7d6bb5" stroke-width="2"/><circle cx="290" cy="26" r="4" stroke="#61bedb"/><circle cx="41" cy="145" r="3" fill="#a491ff"/></svg></div>
-<div class="chips"><span class="chip">10 ВОПРОСОВ</span><span class="chip">~ 1 МИНУТА</span><span class="chip">100% ПО-БРАТСКИ</span></div></section>
+<div class="chips"><span class="chip">10 ВОПРОСОВ</span><span class="chip">~ 1 МИНУТА</span><span class="chip">100% FORTNITE</span></div></section>
 <section class="card" aria-label="Игровой опрос"><div class="cardtop"><span>БОЕВАЯ АНКЕТА</span><span class="count" id="count">1/10</span></div><div class="track" role="progressbar" aria-label="Прогресс опроса" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1" id="progress"><div class="fill" id="fill"></div></div><div id="stage"><div class="question-icon" id="icon" aria-hidden="true"></div><h2 id="question" tabindex="-1"></h2><p class="hint" id="hint"></p><div class="answers" id="answers" role="group" aria-labelledby="question"></div></div><div class="nav"><button class="back" id="back">← Назад</button><button class="primary" id="next" disabled>Дальше →</button></div><p class="under">Без правильных ответов. Но отряд всё запомнит 👀</p></section>
 </main>
 <section id="result" class="card result" hidden aria-labelledby="result-title"><div class="eyebrow">МИССИЯ: СОБРАТЬСЯ НА КАТКУ</div><div class="badge" aria-hidden="true">🔥</div><h1 id="result-title" tabindex="-1">🔥 АНДРЮША, ТВОЯ ЗАЯВКА В <span>НОЧНОЙ ОТРЯД</span> ПРИНЯТА!</h1><p class="notice">Анкета готова, боец. Осталось отправить её братану — пусть готовит лобби.</p><dl class="summary" id="summary"></dl><div class="actions"><button class="primary" id="share">📲 Отправить ответы</button><button class="secondary" id="copy">Скопировать ответы</button></div><p class="notice">Ответы не отправляются автоматически. Нажми «Отправить ответы» и выбери получателя в меню телефона.</p><p class="status" role="status" id="status"></p><textarea id="manual" class="manual" readonly aria-label="Ответы для ручного копирования" hidden></textarea><button class="quiet" id="edit">← Изменить ответы</button></section>
@@ -42,18 +42,108 @@ footer{display:flex;justify-content:space-between;gap:15px;color:#656e8e;font-si
 <script>
 "use strict";
 const questions=[
-["Будешь сегодня играть до 02:00?",["Да, до двух 🔥","Как пойдёт","Нет, спать 😴"],"🌙","Проверяем запас ночного топлива."],
-["Во сколько залетаешь?",["20:00–21:00","21:00–22:00","После 22:00","Сегодня не зайду"],"⏱️","Чтобы «пять минут» не превратились в два часа."],
-["В пятницу будешь играть параллельно с работой?",["Да, работа не помеха 😎","По возможности","Нет, только работа"],"💼","Уровень многозадачности: Андрюша."],
-["Во что сегодня рубимся?",["Fortnite","GTA Online","Во что позовёте","Сегодня пас"],"🎮","Выбираем поле для легендарных моментов."],
-["Микрофон включишь?",["Да, буду на связи","Иногда","Нет, тихий режим"],"🎙️","«Алло, меня слышно?» — классика жанра."],
-["Какая цель на вечер?",["Победы любой ценой","Просто поугарать","Прокачать скилл","Поболтать"],"🎯","Любой план хорош, если отряд в сборе."],
-["Если начнёшь засыпать в 01:00?",["Дотяну до двух","Уйду спать","Ещё одну катку — и всё"],"😴","Та самая последняя катка. Версия 17.0."],
-["Что берёшь на ночной рейд?",["Кофе или энергетик","Чай и вкусняшки","Вода","Ничего"],"☕","Снаряжение проверено. Печеньки на месте?"],
-["В пятницу во сколько сможешь зайти?",["Днём между делами","После работы","Поздно вечером","Не смогу"],"📅","Бронируем место в лобби заранее."],
-["Обещаешь не пропадать без предупреждения?",["Клянусь, братан 🤝","Постараюсь 😅","Ничего не обещаю"],"🤝","Самый серьёзный пункт нашего несерьёзного договора."]
+  [
+    "Будешь сегодня играть в Fortnite после 23:45?",
+    [
+      "Да, залетаю после 23:45 🔥",
+      "Как пойдёт, напишу в чат",
+      "Нет, сегодня без ночных каток 😴"
+    ],
+    "🌙",
+    "Отряд уточняет: ждать тебя в лобби или уже плакать?"
+  ],
+  [
+    "В пятницу будешь играть в Fortnite?",
+    [
+      "Да, братан, я в деле 🎮",
+      "По возможности, предупрежу",
+      "Нет, в пятницу без меня"
+    ],
+    "📅",
+    "Планируем пятничный десант. Без «я на пять минут»."
+  ],
+  [
+    "Твои действия: перед тобой синий сундук и нокнутый Колес. Что сделаешь первым?",
+    [
+      "Конечно подниму Колеса.",
+      "Открою синий сундук и после подниму бедолагу.",
+      "Откину Колеса подальше от синего сундука и открою синий сундук."
+    ],
+    "💎",
+    "Проверка дружбы. Колес внимательно следит за ответом 👀"
+  ],
+  [
+    "Прыгаем из боевого автобуса. Отряд поставил метку, а ты увидел место пожирнее. Твои действия?",
+    [
+      "Прыгаю с пацанами, мы же отряд 🤝",
+      "Улечу за лутом: «Я тут рядом!»",
+      "Сначала спорю о метке, потом падаю последним"
+    ],
+    "🪂",
+    "«Рядом» — это сколько километров по карте?"
+  ],
+  [
+    "Колес говорит: «Там один, пушим!» А ты видишь целый отряд. Что делаешь?",
+    [
+      "Предупрежу и зайду вместе с командой",
+      "Поверю Колесу. Помянем заранее 😂",
+      "Спрячусь и буду руководить по микрофону"
+    ],
+    "👀",
+    "Разведданные от Колеса: точность примерно на глаз."
+  ],
+  [
+    "У тебя полный щит, а у тиммейта ноль. Нашёл ещё щит. Как поступишь?",
+    [
+      "Отдам тиммейту, пусть тоже поживёт",
+      "Уберу себе: вдруг потом пригодится",
+      "Скажу «тут щит» и поставлю метку в соседнем доме"
+    ],
+    "🧪",
+    "Инвентарь полный. Совесть — по ситуации."
+  ],
+  [
+    "Из врага выпало золотое оружие, но выбил его тиммейт. Твои действия?",
+    [
+      "Спрошу, нужно ли ему, и потом заберу",
+      "Кто первый добежал — того и золотое 😎",
+      "Подберу молча: «Какое оружие, братан?»"
+    ],
+    "✨",
+    "Сейчас узнаем, почему в отряде исчезает лут."
+  ],
+  [
+    "Буря уже идёт, а Колес всё ещё лутает. Что скажешь?",
+    [
+      "«Колес, в зону! Лут потом найдём!»",
+      "«Ещё один сундук — и точно уходим»",
+      "Уеду на машине: «Братан, я морально с тобой»"
+    ],
+    "🌪️",
+    "Главный противник отряда — не враги, а ещё один сундук."
+  ],
+  [
+    "Остались ты и последний противник. Весь отряд смотрит. Твой план?",
+    [
+      "Соберусь и попробую забрать победу 🏆",
+      "Попрошу тишины и сразу промахнусь",
+      "Начну эмоцию: пусть знает, с кем связался"
+    ],
+    "🏆",
+    "Три советчика в наушниках. Один нервный Андрюша."
+  ],
+  [
+    "Проиграли катку в Fortnite. Что говоришь отряду?",
+    [
+      "«Ещё одну, сейчас точно заберём!»",
+      "«Последняя была разминочная»",
+      "«Я спать». И через минуту снова жму «Готов»"
+    ],
+    "🔁",
+    "Кнопка «Готов» сильнее любых обещаний лечь пораньше."
+  ]
 ];
-const $=id=>document.getElementById(id),storageKey="andryusha-night-squad-v1";
+const $=id=>document.getElementById(id),storageKey="andryusha-fortnite-v2";
 let selected=Array(10).fill(null),step=0,complete=false;
 try{const saved=JSON.parse(localStorage.getItem(storageKey));if(saved&&Array.isArray(saved.selected)&&saved.selected.length===10){selected=saved.selected.map((v,i)=>Number.isInteger(v)&&v>=0&&v<questions[i][1].length?v:null);step=Number.isInteger(saved.step)?Math.max(0,Math.min(9,saved.step)):0;complete=saved.complete===true&&selected.every(v=>v!==null)}}catch{}
 function save(){try{localStorage.setItem(storageKey,JSON.stringify({selected,step,complete}))}catch{}}
